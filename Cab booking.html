@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAB BOOKING</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .website-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .website-image {
+            width: 150px; /* Decreased image size */
+            height: auto;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .website-details {
+            width: 48%;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            font-size: 18px; /* Increased font size */
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CAB BOOKING</h1>
+    </header>
+    <section>
+        <p>Welcome to our booking services!</p>
+        <p>choose your option:</p>
+        <ul>
+            <li>1. OLA</li>
+            <li>2. UBER</li>
+            <li>3. GOIBIO</li>
+            
+            <li>5. CAB BAAZAR</li>
+        </ul>
+        <div class="website-container">
+            <div class="website-details">
+                <img class="website-image" src="https://media.licdn.com/dms/image/D4E12AQGmTgHcfJzalQ/article-cover_image-shrink_720_1280/0/1683884644516?e=2147483647&v=beta&t=yOkXp6uNt8pQq3TjrEpEXUDxytmeUUxqnEBch4bV_RE" alt="ola cabs" onclick="showWebsite('https://book.olacabs.com/')">
+            </div>
+            <div class="website-details">
+                <img class="website-image" src="https://www.wdsoft.in/blog-images/2018/10/Current-Uber-Logo.jpg" alt="Uber" onclick="showWebsite('https://www.uber.com/in/en/ride/intercity/?utm_source=AdWords_Brand&utm_campaign=CM2366823-search-google-brand_77_-99_IN-National_r_web_pme_cpc_en_T1_Intercity-Generic_BM_uber_kwd-12633382_692155360715_166123407264_b_c&campaign_id=20969172135&adg_id=166123407264&fi_id=&match=b&net=g&dev=c&dev_m=&ad_id=692155360715&cre=692155360715&kwid=kwd-12633382&kw=uber&placement=&tar=&gclsrc=aw.ds&gad_source=1&gclid=CjwKCAjw3NyxBhBmEiwAyofDYYcT-7Wx3QYcotj4UMJrpId0m48ioHBhk1RorHJml_mQWNkYRK0gRxoCOhQQAvD_BwE')">
+            </div>
+            <div class="website-details">
+                <img class="website-image" src="https://jsak.goibibo.com/pwa_v3/pwa_growth/images/og-goibibo.aba291ed.png" alt="goibibo" onclick="showWebsite('https://www.goibibo.com/cars/?gclid=CjwKCAjw3NyxBhBmEiwAyofDYecFgI8Y2F1VgCVWWznSglGgK3FRMjq4jRyKxIswgMDWtFbYyNYBpxoCwhoQAvD_BwE&cmp=SEM|D|Cabs|Google|Generic|GoCar_Generic&campaign=&gad_source=1&ef_id=ZOtsSQAAAEBvKgN1:20240505152024:s')">
+            </div>
+            <div class="website-details">
+              
+         
+            <div class="website-details">
+                <img class="website-image" src="https://content.jdmagicbox.com/comp/delhi/u8/011pxx11.xx11.170823130037.a1u8/catalogue/cab-bazar-delhi-24-hours-car-rental-ob56v10axc.jpg" alt="Cab Baazar" onclick="showWebsite('https://cabbazar.com/taxi/cab-booking-app')">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showWebsite(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
